@@ -125,6 +125,11 @@ func DeleteMovie(w http.ResponseWriter, req *http.Request) {
 
 }
 
+
+// To update a Movie first store the id of the movie and then remove the movie by using append
+// Then before making the request decode the body and add id to it.
+// After adding id to the movie append it to the Data. Finally again encode the body
+
 func UpdateMovie(w http.ResponseWriter, req *http.Request) {
 	fmt.Println("Updating the Movie")
 
