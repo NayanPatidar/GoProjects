@@ -1,0 +1,78 @@
+ ------------------------------------------------ Project #1. Create a web scraper ------------------------------------------------
+
+Level up even further!
+Scrape more data:
+
+Generating paginated URLs based on the input URL, such as example.com/blog/1, example.com/blog/2, etc
+Following links
+Add CLI arguments and flags to allow the user to customize the application:
+
+Specify the URLs to scrape
+Use custom CSS selectors
+Enable auto-pagination based on an input pattern
+Enable link following using a CSS selector
+Implement rate limiting per domain so the user doesn't get blocked if they make lots of requests
+
+Cache pages so subsequent runs don't need to download the same page again:
+
+Download a fresh copy if the cached page is over 1 day old
+Add a CLI flag to clear the cache
+Add a CLI flag to ignore the cache and download the page anyway
+Save the new page in the cache
+
+----------------------------------------------------Project #2. Create a credit card validator --------------------------------------
+
+The 2nd of our ‘can’t miss projects’ to complete.
+
+Credit cards will often use the Luhn algorithm to confirm the validity of a credit card number. First, implement the algorithm as a microservice and then expose the functionality with a JSON API.
+
+This project is a web-enabled micro service. It accepts a credit card number in an HTTP request before returning a response. The response indicates whether the number is valid according to the Luhn algorithm.
+
+Implementing this project requires a series of steps that looks something like this:
+
+Implement the Luhn algorithm
+Create an HTTP server
+Configure the server to respond to GET requests having a JSON payload
+Accept valid JSON requests and proceed to step 5, whilst rejecting invalid requests using an HTTP 400 status code
+Extract the credit card number from the JSON payload
+Run the Luhn algorithm on the number
+Wrap the result into a JSON response payload
+Return the payload back to the user through the HTTP server
+You can grab both of the packages for this project below:
+
+Get, Head, Post, and PostForm to make HTTP (or HTTPS) requests package
+Encoding and decoding JSON code package
+Level up even further!
+You can also add functions to identify credit card numbers used by global payment networks such as Visa, MasterCard, and American Express:
+
+Report the identified card network (if any) in your JSON response
+Identify credit card numbers used by primary payment networks that operate in your regions, such as RuPay, UnionPay, JCB, Discover, EPI, or others
+
+------------------------------------------------------ Project #3. Create a pixel art editor ------------------------------------------
+
+This desktop GUI project will show you how to use Go’s standard library and structure a large project across multiple packages. You’ll then create a pixel art editor featuring multiple dialogs, pixel painting, color selection, and pan/zoom.
+
+As well as developing your skills and gaining real-world experience, you’ll end up with a project that’ll look great on your portfolio. It truly is a win-win all round, and it’s actually a ton of fun.
+
+The course is designed to walk through absolute beginners with no coding experience to the point of having the skills and confidence to get hired.
+
+This means it's a fantastic project for all skill levels, and zero barrier to entry - that’s why I created the project!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
